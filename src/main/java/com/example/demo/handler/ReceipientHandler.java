@@ -1,12 +1,10 @@
 package com.example.demo.handler;
 
-import com.example.demo.model.Customer;
 import com.example.demo.service.CustomerService;
 import io.vertx.core.json.Json;
 import io.vertx.rxjava.core.Vertx;
 import io.vertx.rxjava.core.eventbus.Message;
 import io.vertx.rxjava.ext.web.RoutingContext;
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -14,8 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
 
-import static com.example.demo.constants.ApplicationConstants.FETCH_CUSTOMER_VALUE;
-
+import javax.annotation.PostConstruct;
 @Component
 @Slf4j
 public class ReceipientHandler {

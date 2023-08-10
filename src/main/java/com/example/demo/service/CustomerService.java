@@ -1,10 +1,10 @@
 package com.example.demo.service;
 
 import com.example.demo.model.Customer;
-import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 import rx.Single;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

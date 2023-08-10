@@ -4,11 +4,11 @@ import com.example.demo.model.Customer;
 import com.example.demo.service.CustomerService;
 import io.vertx.rxjava.core.Vertx;
 import io.vertx.rxjava.core.eventbus.Message;
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.Optional;
 
 import static com.example.demo.constants.ApplicationConstants.FETCH_CUSTOMER_REQUEST_VALUE;

@@ -1,17 +1,15 @@
 package com.example.demo.service;
 
 import com.example.demo.router.SenderRouter;
-import io.vertx.core.http.HttpServerOptions;
 import io.vertx.rxjava.core.Vertx;
 import io.vertx.rxjava.core.http.HttpServer;
 import io.vertxbeans.rxjava.ContextRunner;
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import rx.Observable;
-import rx.Single;
 
+import javax.annotation.PostConstruct;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
